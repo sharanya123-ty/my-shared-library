@@ -12,6 +12,10 @@ def setupMaven() {
     echo 'Setting up Maven...'
     sh 'sudo apt install -y maven'
 }
+  def (StringartifactPath () {
+     echo 'Uploading artifact...'
+     archiveArtifacts artifacts: artifactPath, allowEmptyArchive: true
+}  
 
 def runApplication() {
     echo 'Running Spring Boot application...'
