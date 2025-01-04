@@ -1,6 +1,7 @@
 def check_out() {
     echo 'Checking out..'
     checkout scm
+}
 
 def setupJava() {
     echo 'Setting up Java 17...'
