@@ -7,16 +7,16 @@ def setupJava() {
     echo 'Setting up Java 17...'
     sh 'sudo apt update'
     sh 'sudo apt install -y openjdk-17-jdk'
-}
+	}
 
 def setupMaven() {
     echo 'Setting up Maven...'
     sh 'sudo apt install -y maven'
 }
 
-  def (StringartifactPath () {
-     echo 'Uploading artifact...'
-     archiveArtifacts artifacts: artifactPath, allowEmptyArchive: true
+def (StringartifactPath () {
+    echo 'Uploading artifact...'
+    archiveArtifacts artifacts: artifactPath, allowEmptyArchive: true
 }  
 
 def runApplication() {
