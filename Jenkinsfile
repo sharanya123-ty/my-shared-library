@@ -9,9 +9,9 @@ pipeline {
         PATH = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${env.PATH}"
     }
   stages {
-        stage('pipeline.all') {
+        stage('pipeline') {
             steps {
-                pipeline.all()
+                pipeline()
             }
         }
   }
